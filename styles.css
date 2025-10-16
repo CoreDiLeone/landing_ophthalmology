@@ -1,0 +1,501 @@
+:root {
+  /*colors*/
+  --light-cream: #fdfcfa;
+  --ocean-blue: #0d3b66;
+  --dark-blue: #051626;
+  --roboto-font: "Roboto", sans-serif;
+}
+* {
+  font-family: var(--roboto-font);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  background-color: var(--light-cream);
+  justify-content: space-around;
+  padding: 20px;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 500;
+}
+.header a {
+  color: var(--dark-blue);
+  text-decoration: none;
+}
+.scrolled {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+/* Fondo transparente con desenfoque PONER ESTE EFECTO CON JAVASCRIPT 
+  background: rgba(255, 255, 255, 0.3); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);*/
+button {
+  cursor: pointer;
+}
+.brand img {
+  width: 70px;
+}
+ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+.btn-contact {
+  background-color: var(--ocean-blue);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  font-weight: 500;
+}
+.main_section-hero {
+  background-image: url("./images/girl_with_lenses.png");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  gap: 20px;
+  padding: 30px;
+  padding-top: 16rem;
+}
+.main_section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.main_section-hero h1 {
+  font-size: 52px;
+}
+.main_section-hero h2,
+.sub_section-hero p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+}
+.sub_section-hero {
+  background-color: var(--ocean-blue);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  padding: 50px;
+  align-items: center;
+  gap: 20px;
+}
+.sub_section-hero h2 {
+  font-size: 36px;
+}
+/*Styles for services section*/
+.services_section {
+  padding: 30px;
+  padding-top: 150px;
+  text-align: center;
+  background-color: var(--light-cream);
+}
+.services_section-title {
+  font-size: 36px;
+  color: var(--dark-blue);
+  margin-bottom: 8px;
+}
+.services_section-subtitle {
+  color: var(--dark-blue);
+  font-weight: 400;
+  font-size: 16px;
+}
+.services_section-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 30px;
+  margin-top: 7vh;
+}
+
+.services_section-card {
+  max-width: 380px;
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--dark-blue);
+  overflow: hidden;
+}
+.services_section-card-info {
+  padding: 25px;
+  text-align: left;
+  color: var(--dark-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.services_section-card-title {
+  font-size: 24px;
+  color: var(--dark-blue);
+}
+.services_section-card-description {
+  font-size: 16px;
+  color: var(--dark-blue);
+  font-weight: 400;
+}
+.services_section-card-btn {
+  background-color: var(--light-cream);
+  border: none;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  font-size: 17px;
+}
+.services_section-card-btn img {
+  padding-top: 2px;
+}
+.services_section-card-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*Our team*/
+.ourteam_section {
+  margin-top: 17vh;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: var(--dark-blue);
+}
+.ourteam_section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.ourteam_section h2 {
+  font-size: 36px;
+  color: var(--dark-blue);
+}
+.ourteam_section-paragraph {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--dark-blue);
+  margin-bottom: 50px;
+}
+.ourteam_section-container-card {
+  max-width: 390px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.ourteam_section-container-card img {
+  max-width: 390px;
+  margin-bottom: 10px;
+  align-self: center;
+  width: 100%;
+  max-width: 380px;
+}
+.ourteam_section-container-card-title {
+  font-size: 18px;
+  padding: 5px;
+}
+.ourteam_section-container-card-subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+.ourteam_section-container-card-description {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/*Styles for testimony section*/
+.testimony_section {
+  background-color: var(--ocean-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 120px 30px;
+  gap: 20px;
+  text-align: center;
+  margin-top: 17vh;
+}
+.testimony_section h2 {
+  font-size: 36px;
+  color: #fff;
+}
+.testimony_section h3 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.testimony_section-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 30px;
+  max-width: 300px;
+}
+.testimony_section-container-card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 32px;
+}
+.testimony_section-container-card-stars {
+  width: 116px;
+}
+.testimony_section-container-card-profile {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  align-items: center;
+}
+
+/*Styles for schedule section*/
+.schedule_section {
+  margin-top: 17vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.schedule_section-card {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+  border: 2px solid var(--dark-blue);
+  padding: 32px;
+  padding-bottom: 0;
+  overflow: hidden;
+  max-width: 300px;
+  max-height: 580px;
+}
+.schedule_section-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.schedule_section-card img {
+  width: 329px;
+  height: 223px;
+}
+.schedule_section-card-title {
+  color: var(--dark-blue);
+  font-size: 36px;
+}
+.schedule_section-card-description {
+  color: var(--dark-blue);
+  font-size: 16px;
+  font-weight: 300;
+}
+.schedule_section-btn {
+  background-color: var(--ocean-blue);
+  color: #fff;
+  padding: 20px;
+  border: none;
+  align-self: flex-start;
+}
+
+/*Styles for footer section*/
+.footer {
+  background-color: var(--ocean-blue);
+  margin-top: 17vh;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  color: #fff;
+  flex-direction: column;
+}
+.footer-container {
+  padding: 48px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  width: 100%;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-list a {
+  text-decoration: none;
+}
+.footer a {
+  color: #fff;
+  font-size: 14px;
+}
+.footer-line {
+  width: 100%;
+}
+.footer-container-icons a {
+  padding: 5px;
+}
+.footer-subcontainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+/*Styles for desktop devices*/
+@media screen and (min-width: 700px) {
+  .ourteam_section-container-card {
+    max-width: 430px;
+    justify-content: normal;
+  }
+  .ourteam_section-container-card img {
+    max-width: 430px;
+  }
+  .main_section-container {
+    max-width: 800px;
+  }
+  .footer-subcontainer {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer {
+    padding: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    justify-content: space-between;
+    padding: 20px 64px;
+  }
+
+  .main_section-hero h1 {
+    font-size: 56px;
+  }
+  .main_section-hero h2 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .main_section-container {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10vh;
+  }
+  .btn-contact {
+    width: 100px;
+  }
+  .sub_section-hero {
+    padding: 7rem;
+  }
+  .sub_section-hero h2 {
+    font-size: 52px;
+  }
+  .sub_section-hero p {
+    font-size: 18px;
+  }
+  .sub_section-hero div {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .services_section {
+    padding: 170px 0;
+  }
+  .services_section-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .ourteam_section-container {
+    max-width: 1280px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+    grid-template-rows: repeat(2, auto); /* 2 filas automáticas */
+
+    gap: 64px;
+  }
+  .ourteam_section-container-card {
+    max-width: 580px;
+  }
+  .ourteam_section-container-card img {
+    max-width: 580px;
+  }
+  /*Styles for testimony section*/
+  .testimony_section {
+    margin-top: 20vh;
+  }
+  .testimony_section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    max-width: 1050px;
+  }
+  .schedule_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+  }
+
+  .schedule_section-card {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: #ffffff;
+    max-width: 1100px;
+    padding: 0;
+    width: 100%;
+  }
+  .schedule_section-card div {
+    padding: 32px;
+    gap: 32px;
+  }
+  .schedule_section-card img {
+    width: 100%;
+    height: 100%;
+  }
+  .footer-list {
+    padding-left: 5rem;
+  }
+}
+html,
+body {
+  overflow-x: hidden;
+}
